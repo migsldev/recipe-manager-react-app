@@ -11,6 +11,7 @@ Recipe Manager is a web application designed to help users discover, save, and m
 5. **RecipeForm:** Component for adding or editing recipes.
 6. **Footer:** Component to display a footer with some information about the application.
 7. **Popular:** Component to display a Popular food selections.
+8. **Category Icons:** Component to display a catergory icons including European, American, Asian, Indian.
 
 ## Routes:
 1. **/recipes:** Displays a list of all recipes.
@@ -36,3 +37,4 @@ Recipe Manager is a web application designed to help users discover, save, and m
 
 ## Resources:
 - **Recipes API:** https://api.spoonacular.com
+- **React Icons:** https://react-icons.github.io/react-icons/
