@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Recipe Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description:
+Recipe Manager is a web application designed to help users discover, save, and manage their favorite recipes. With Recipe Manager, users can browse a collection of recipes, view detailed recipe instructions, add new recipes, edit existing ones, and delete recipes. The application utilizes React Router for navigation and json-server to create a RESTful API for backend data persistence.
 
-## Available Scripts
+## Components:
+1. **App:** The main component that renders other components and sets up routing.
+2. **Navbar:** A navigation bar component that allows users to navigate between different routes.
+3. **RecipeList:** Component to display a list of recipes.
+4. **RecipeDetail:** Component to display detailed information about a recipe.
+5. **RecipeForm:** Component for adding or editing recipes.
+6. **Footer:** Component to display a footer with some information about the application.
 
-In the project directory, you can run:
+## Routes:
+1. **/recipes:** Displays a list of all recipes.
+2. **/recipes/:id:** Displays detailed information about a specific recipe.
+3. **/recipes/add:** Allows users to add a new recipe.
+4. **/recipes/:id/edit:** Allows users to edit an existing recipe.
 
-### `npm start`
+## RESTful API Endpoints:
+- GET `/recipes`: Retrieves a list of all recipes.
+- GET `/recipes/:id`: Retrieves detailed information about a specific recipe.
+- POST `/recipes`: Adds a new recipe.
+- PUT `/recipes/:id`: Updates an existing recipe.
+- DELETE `/recipes/:id`: Deletes a recipe.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Features:
+- **Recipe Browsing:** Users can browse a collection of recipes and view detailed information about each recipe.
+- **Recipe Management:** Users can add new recipes, edit existing ones, and delete recipes.
+- **Responsive Design:** The application is designed to be responsive and accessible on various devices and screen sizes.
+- **User-friendly Interface:** The user interface is intuitive and easy to navigate, with a navigation bar for seamless routing between different sections of the application.
+- **Data Persistence:** Utilizes json-server to provide backend data persistence, ensuring that user data is saved and accessible across sessions.
+- **Error Handling:** Implements error handling for cases like empty recipe lists or failed API requests to provide a smooth user experience.
+- **Form Validation:** Uses controlled form/components for adding and editing recipes, with validation to ensure that user input is accurate and complete.
