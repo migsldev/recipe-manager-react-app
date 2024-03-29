@@ -6,19 +6,19 @@ import { NavLink } from 'react-router-dom'; //Navlink adds "active class" which 
 function Category() {
   return (
     <List>
-        <NavLink>
-            <FaPizzaSlice />
+        <NavLink  to={'/cuisine/European'} >
+            <FaPizzaSlice/>
             <h4>European</h4>
         </NavLink>
-        <NavLink>
+        <NavLink to={'/cuisine/American'}>
             <FaHamburger />
             <h4>American</h4>
         </NavLink>
-        <NavLink>
+        <NavLink to={'/cuisine/Asian'}>
             <GiNoodles/>
             <h4>Asian</h4>
         </NavLink>
-        <NavLink>
+        <NavLink to={'/cuisine/Indian'}>
             <GiChiliPepper />
             <h4>Indian</h4>
         </NavLink>
