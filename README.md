@@ -10,6 +10,7 @@ Recipe Manager is a web application designed to help users discover, save, and m
 4. **RecipeDetail:** Component to display detailed information about a recipe.
 5. **RecipeForm:** Component for adding or editing recipes.
 6. **Footer:** Component to display a footer with some information about the application.
+7. **Popular:** Component to display a Popular food selections.
 
 ## Routes:
 1. **/recipes:** Displays a list of all recipes.
