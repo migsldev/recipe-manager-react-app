@@ -33,3 +33,6 @@ Recipe Manager is a web application designed to help users discover, save, and m
 - **Data Persistence:** Utilizes json-server to provide backend data persistence, ensuring that user data is saved and accessible across sessions.
 - **Error Handling:** Implements error handling for cases like empty recipe lists or failed API requests to provide a smooth user experience.
 - **Form Validation:** Uses controlled form/components for adding and editing recipes, with validation to ensure that user input is accurate and complete.
+
+## Resources:
+- **Recipes API:** https://api.spoonacular.com
