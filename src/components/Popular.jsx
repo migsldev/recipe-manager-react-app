@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components"; //create functions and attach components with styling attached to it
 import { Splide, SplideSlide } from '@splidejs/react-splide'; //Splide is the carousel scroll component, SplideSlide is the each individual card
 import '@splidejs/react-splide/css';
+import { Link } from "react-router-dom";
 
 //Popular Section
 function Popular() {
@@ -49,9 +50,11 @@ function Popular() {
                         return(
                             <SplideSlide key={recipe.id}>
                                 <Card>
+                                    <Link to={'/recipe/' + recipe.id}>
                                     <p>{recipe.title}</p>
                                     <img src={recipe.image} alt={recipe.title} />
                                     <Gradient />
+                                    </Link>
                                 </Card>
                             </SplideSlide>
                         );
