@@ -1,22 +1,28 @@
 import styled from "styled-components";
 import{useState} from 'react';
 import { FaSearch } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; //navigate upon entering a different page
 
 function Search() {
 
-    const [input, setInput] = useState(""); //
-  return (
-    <FormStyle>
-        <div>
-            <FaSearch></FaSearch>
-            <input 
-                onChange={(e) => setInput(e.target.value)}
-                type="text" 
-                value={input}
-            />
-        </div>
-    </FormStyle>
-  )
+    const [input, setInput] = useState("");
+    const navigate = useNavigate();
+    const submitHandler = (e) => {
+        e.preventDefault(); // prevents refresh of page
+        navigate('/searched/' + input)
+    };
+    return (
+        <FormStyle onSubmit={submitHandler}>
+            <div>
+                <FaSearch></FaSearch>
+                <input 
+                    onChange={(e) => setInput(e.target.value)} //event listener to detect keyboard inputs
+                    type="text" 
+                    value={input}
+                />
+            </div>
+        </FormStyle>
+    )
 }
 
 //styling form
