@@ -16,6 +16,12 @@ body {
   margin: 0% 10%;
 }
 
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -26,10 +32,12 @@ h4 {
   color: rgb(56, 56, 56);
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: rgb(56, 56, 56);
-  line-height: 2.5rem;
+  line-height: 2rem;
   margin: 1rem 0rem;
+  margin-right: 1rem;
+  
 
 }
 a {

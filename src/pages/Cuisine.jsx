@@ -22,7 +22,12 @@ function Cuisine() {
         //console.log(params.type);
     },[params.type]); // when params changes, make sure the useEffect function runs
     
-    return <Grid>
+    return <Grid 
+        animate={{opacity: 1}}
+        initial={{ opacity: 0}}
+        exit={{ opacity: 0}}
+        transition={{duration: 0.5}}
+        >
         {cuisine.map((item) => {
             return( // Link tags add link to Recipe.jsx
                 <Card key={item.id}>
@@ -30,15 +35,14 @@ function Cuisine() {
                     <img src={item.image} alt=''/>
                     <h4>{item.title}</h4>
                     </Link>
-
                 </Card>
             )
-        } )}
+        })};
 
     </Grid>;
 }
 
-const Grid = styled.div `
+const Grid = styled(motion.div)`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 3rem;

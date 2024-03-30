@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
+import {motion} from 'framer-motion';
+
 
 import React from 'react'
 
@@ -19,20 +21,29 @@ function Recipe() {
     };
 
     useEffect(() => {
-        fetchDetails();
+        fetchDetails(params.name);
     }, [params.name]);
 
     return (
-        <DetailWrapper>
+        <DetailWrapper
+            animate={{opacity: 1}}
+            initial={{ opacity: 0}}
+            exit={{ opacity: 0}}
+            transition={{duration: 0.5}}
+        >
             <div>
                 <h2>{details.title}</h2>
                 <img src={details.image} alt={details.title}/>
             </div>
-            <Info>
+            <Info
+                    animate={{opacity: 1}}
+                    initial={{ opacity: 0}}
+                    exit={{ opacity: 0}}
+                    transition={{duration: 0.5}}
+            >
                 <Button 
                     className={activeTab === "instructions" ? "active" : ""}
                     onClick={() => setActiveTab("instructions")}>
-
                     Instructions
                 </Button>
                 <Button 
@@ -53,7 +64,6 @@ function Recipe() {
                         ))}
                     </ul>
                 )}
-                ;
             </Info>
         </DetailWrapper>
     );
@@ -62,7 +72,7 @@ function Recipe() {
 
 
 //styling
-const DetailWrapper = styled.div`
+const DetailWrapper = styled(motion.div)`
     margin-top: 10rem;
     margin-bottom: 5rem;
     display: flex;
@@ -94,7 +104,7 @@ const Button = styled.button`
 
 `;
 
-const Info = styled.div`
+const Info = styled(motion.div)`
     margin-left: 10rem;
 `;
 

@@ -1,24 +1,22 @@
 # Recipe Manager
 
 ## Description:
-Recipe Manager is a web application designed to help users discover, save, and manage their favorite recipes. With Recipe Manager, users can browse a collection of recipes, view detailed recipe instructions, add new recipes, edit existing ones, and delete recipes. The application utilizes React Router for navigation and json-server to create a RESTful API for backend data persistence.
+Recipe Manager is a web application designed to help users discover, save, and manage their favorite recipes. With Recipe Manager, users can search from a collection of recipes, view detailed recipe instructions and select popular recipe cuisine. The application utilizes React Router for navigation and json-server to create a RESTful API for backend data persistence.
 
 ## Components:
-1. **App:** The main component that renders other components and sets up routing.
-2. **Navbar:** A navigation bar component that allows users to navigate between different routes.
-3. **RecipeList:** Component to display a list of recipes.
-4. **RecipeDetail:** Component to display detailed information about a recipe.
-5. **RecipeForm:** Component for adding or editing recipes.
-6. **Search:** Component for searching for recipes
-7. **Vegetarian Option:** Component to display a Vegetarian Dishes.
-8. **Popular Option:** Component to display a Popular food selections.
-9. **Category Icons:** Component to display a catergory icons including European, American, Asian, Middle Eastern.
+1. **Home:** Component to display Home page
+2. **Recipe:** Component to display detailed information about a recipe, instructions and ingredients
+3. **Search:** Component for searching for recipes
+4. **Searched:** Component for searched for recipes
+5. **Vegetarian list:** Component to display a Vegetarian Dishes.
+6. **Popular list:** Component to display a Popular food selections.
+7. **Category Icons:** Component to display a catergory icons including European, American, Asian, Middle Eastern.
 
 ## Routes:
-1. **/recipes:** Displays a list of all recipes.
-2. **/recipes/:id:** Displays detailed information about a specific recipe.
-3. **/recipes/add:** Allows users to add a new recipe.
-4. **/recipes/:id/edit:** Allows users to edit an existing recipe.
+1. **/Home:** Displays a the home page of Popular and Vegetarian picks.
+2. **/Recipes:** Displays detailed information about a specific recipe, ingredients and steps.
+3. **/Cuisine:** Allows users to browse selected cusine recipes.
+4. **/Search:** Allows users to search an existing recipe.
 
 ## RESTful API Endpoints:
 - GET `/recipes`: Retrieves a list of all recipes.
