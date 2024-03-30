@@ -9,7 +9,8 @@ function Search() {
     const navigate = useNavigate();
     const submitHandler = (e) => {
         e.preventDefault(); // prevents refresh of page
-        navigate('/searched/' + input)
+        navigate('/searched/' + input);
+        setInput(""); // Clear input after submitting
     };
     return (
         <FormStyle onSubmit={submitHandler}>
