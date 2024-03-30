@@ -6,6 +6,7 @@ import Recipe from './Recipe';
 import {Route, Routes, useLocation} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
+
 function Pages() {
     const location = useLocation();
   return ( //Browser Router gives the ability for routes to work, AnimatePresence for the fadein and fadeout

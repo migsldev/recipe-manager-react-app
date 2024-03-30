@@ -5,6 +5,7 @@ import {Link, useParams} from 'react-router-dom'; // pulls out the keyword from 
 
 
 
+
 function Cuisine() {
 
     const [cuisine, setCuisine] = useState([]);

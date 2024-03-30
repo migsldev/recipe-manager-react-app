@@ -65,7 +65,12 @@ function Veggie() {
 
 //Styling
 const Wrapper = styled.div
-    `margin: 4rem 0rem;`;
+    `margin: 4rem 0rem;
+    h3 {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+    `;
 
 const Card = styled.div`
     min-height: 25rem;
