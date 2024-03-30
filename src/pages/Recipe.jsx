@@ -7,17 +7,21 @@ import React from 'react'
 function Recipe() {
 
     let params = useParams();
-    const [details, setDetails] = useState({});
+    const [details, setDetails] = useState({}); // mounting the details as an object
+    const [activeTab, setActiveTab] = useState("instructions"); //default button active
 
     const fetchDetails = async () => {
-        const data = await fetch(`https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`)
+        const data = await fetch(
+            `https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`
+        );
         const detailData = await data.json();
-        setDetails(detailData);
+        setDetails(detailData); //not an array, an object
     };
 
     useEffect(() => {
         fetchDetails();
     }, [params.name]);
+
     return (
         <DetailWrapper>
             <div>
@@ -25,14 +29,39 @@ function Recipe() {
                 <img src={details.image} alt={details.title}/>
             </div>
             <Info>
-                <Button>Instructions</Button>
-                <Button>Ingredients</Button>
+                <Button 
+                    className={activeTab === "instructions" ? "active" : ""}
+                    onClick={() => setActiveTab("instructions")}>
+
+                    Instructions
+                </Button>
+                <Button 
+                    className={activeTab === "ingredients" ? "active" : ""}
+                    onClick={() => setActiveTab("ingredients")}>
+                    Ingredients
+                </Button>
+                {activeTab === "instructions" && (
+                    <div /* prevents from displaying html tags */>
+                        <h3 dangerouslySetInnerHTML={{__html: details.summary}}></h3>
+                        <h3 dangerouslySetInnerHTML={{__html: details.instructions}}></h3>
+                    </div>
+                )}
+                {activeTab === "ingredients" && (
+                    <ul>
+                        {details.extendedIngredients.map((ingredient) => (
+                            <li key={ingredient.id}>{ingredient.original}</li>
+                        ))}
+                    </ul>
+                )}
+                ;
             </Info>
         </DetailWrapper>
     );
   
 }
 
+
+//styling
 const DetailWrapper = styled.div`
     margin-top: 10rem;
     margin-bottom: 5rem;
@@ -51,14 +80,14 @@ const DetailWrapper = styled.div`
 
     }
     ul {
-        mragin-top: 2rem;
+        margin-top: 2rem;
     }
 `;
 
 const Button = styled.button`
     padding: 1rem 2rem;
     color: #313131;
-    backgroung: white;
+    background: white;
     border: 2px solid black;
     margin-right: 2rem;
     font-weight: 600;
