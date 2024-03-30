@@ -11,6 +11,7 @@ Recipe Manager is a web application designed to help users discover, save, and m
 5. **Vegetarian list:** Component to display a Vegetarian Dishes.
 6. **Popular list:** Component to display a Popular food selections.
 7. **Category Icons:** Component to display a catergory icons including European, American, Asian, Middle Eastern.
+8. **Layout:** Component to display a button to allow user to move back to the top of the page
 
 ## Routes:
 1. **/Home:** Displays a the home page of Popular and Vegetarian picks.
