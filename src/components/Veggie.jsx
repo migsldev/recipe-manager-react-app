@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styled from "styled-components"; //create functions and attach components with styling attached to it
+import styled from "styled-components"; 
 import { Splide, SplideSlide } from '@splidejs/react-splide'; //Splide is the carousel scroll component, SplideSlide is the each individual card
 import '@splidejs/react-splide/css';
 import { Link } from "react-router-dom";
@@ -17,9 +17,9 @@ function Veggie() {
       const check = localStorage.getItem('veggie'); //checking if popular is saved in local storage, if it is NO NEED FOR FETCHING
 
       if(check){
-          setVeggie(JSON.parse(check));// this will then take it back, parse it from a string back to an array
+          setVeggie(JSON.parse(check));
 
-      }else{ // if there is NOTHIN on local storage, it will start fetching from API
+      }else{ 
           //API fetch data
           const api = await fetch(
           `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=vegetarian`

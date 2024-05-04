@@ -4,7 +4,7 @@ import { BrowserRouter, Link } from "react-router-dom";
 import Search from "./components/Search";
 import styled from "styled-components";
 import { GiMeal } from "react-icons/gi";
-import Layout from "./components/Layout"; // Import the Layout component
+import Layout from "./components/Layout";
 
 
 

@@ -9,7 +9,7 @@ import { AnimatePresence } from 'framer-motion';
 
 function Pages() {
     const location = useLocation();
-  return ( //Browser Router gives the ability for routes to work, AnimatePresence for the fadein and fadeout
+  return ( 
         <AnimatePresence mode='wait'>
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Home/>} />

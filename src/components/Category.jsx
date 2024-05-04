@@ -1,7 +1,7 @@
 import {FaPizzaSlice, FaHamburger} from 'react-icons/fa'; //European, American
 import {GiNoodles, GiChiliPepper } from 'react-icons/gi'; //asian, Indian
 import styled from 'styled-components';  
-import { NavLink } from 'react-router-dom'; //Navlink adds "active class" which you can add specific styling
+import { NavLink } from 'react-router-dom'; 
 
 function Category() {
   return (
