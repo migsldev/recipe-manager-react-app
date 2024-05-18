@@ -1,16 +1,231 @@
 {
   "recipes": [
     {
-      "id": "d705",
-      "title": "Hard Boiled Egg",
-      "ingredients": "Egg, Water",
-      "instructions": "1. Boil water\n2. Add Egg\n3. Set timer 7 mins\n4. Remove water\n5. Add tap water\n6. Set timer 2 mins\n7. Removed egg shells\n"
+      "id": "1",
+      "title": "Vegetarian Pasta Primavera",
+      "ingredients": "Pasta, bell peppers, cherry tomatoes, zucchini, olive oil, garlic, parmesan cheese, basil",
+      "instructions": "Cook pasta. Sauté garlic and vegetables in olive oil. Toss pasta with vegetables and top with parmesan cheese and basil.",
+      "vegetarian": true
     },
     {
-      "id": "7f9f",
-      "title": "Boiled Egg",
-      "ingredients": "Egg, Water",
-      "instructions": "1. Boil water 5 mins\n2. Place Egg\n3. Boil for 2 mins\n4. Pour water out\n5. sit in cool water 2 mins\n"
+      "id": "2",
+      "title": "Vegetarian Tacos",
+      "ingredients": "Corn tortillas, black beans, corn, avocado, lettuce, salsa, lime, cilantro",
+      "instructions": "Warm tortillas. Fill with black beans, corn, avocado, and lettuce. Top with salsa, lime juice, and cilantro.",
+      "vegetarian": true
+    },
+    {
+      "id": "3",
+      "title": "Vegetarian Stir-Fry",
+      "ingredients": "Broccoli, bell peppers, snap peas, carrots, soy sauce, garlic, ginger, tofu, sesame oil",
+      "instructions": "Stir-fry tofu in sesame oil. Add garlic and ginger, then vegetables. Stir-fry with soy sauce until tender.",
+      "vegetarian": true
+    },
+    {
+      "id": "4",
+      "title": "Vegetarian Chili",
+      "ingredients": "Kidney beans, black beans, bell peppers, tomatoes, onion, garlic, chili powder, cumin, oregano",
+      "instructions": "Sauté onion and garlic. Add bell peppers, tomatoes, beans, and spices. Simmer until flavors meld.",
+      "vegetarian": true
+    },
+    {
+      "id": "5",
+      "title": "Vegetarian Pizza",
+      "ingredients": "Pizza dough, tomato sauce, mozzarella cheese, mushrooms, bell peppers, olives, spinach",
+      "instructions": "Spread tomato sauce on dough. Add cheese and vegetables. Bake until crust is golden and cheese is bubbly.",
+      "vegetarian": true
+    },
+    {
+      "id": "6",
+      "title": "Vegetarian Curry",
+      "ingredients": "Chickpeas, coconut milk, spinach, tomatoes, onion, garlic, ginger, curry powder, cilantro",
+      "instructions": "Sauté onion, garlic, and ginger. Add curry powder, tomatoes, chickpeas, and coconut milk. Simmer and add spinach.",
+      "vegetarian": true
+    },
+    {
+      "id": "7",
+      "title": "Vegetarian Quesadillas",
+      "ingredients": "Flour tortillas, black beans, corn, cheese, bell peppers, avocado, salsa",
+      "instructions": "Fill tortillas with beans, corn, cheese, and bell peppers. Cook in a skillet until cheese is melted.",
+      "vegetarian": true
+    },
+    {
+      "id": "8",
+      "title": "Vegetarian Lasagna",
+      "ingredients": "Lasagna noodles, ricotta cheese, spinach, marinara sauce, mozzarella cheese, parmesan cheese, garlic, basil",
+      "instructions": "Layer noodles with ricotta, spinach, marinara sauce, and cheeses. Bake until bubbly and golden.",
+      "vegetarian": true
+    },
+    {
+      "id": "9",
+      "title": "Vegetarian Burgers",
+      "ingredients": "Black beans, bread crumbs, egg, garlic, onion, cumin, chili powder, hamburger buns, lettuce, tomato",
+      "instructions": "Mash beans with spices, bread crumbs, and egg. Form patties and cook in a skillet. Serve on buns with lettuce and tomato.",
+      "vegetarian": true
+    },
+    {
+      "id": "10",
+      "title": "Vegetarian Enchiladas",
+      "ingredients": "Corn tortillas, black beans, corn, bell peppers, enchilada sauce, cheese, cilantro",
+      "instructions": "Fill tortillas with beans, corn, and bell peppers. Roll up and place in a baking dish. Cover with enchilada sauce and cheese, then bake.",
+      "vegetarian": true
+    },
+    {
+      "id": "11",
+      "title": "Chicken Alfredo",
+      "ingredients": "Chicken breast, fettuccine, heavy cream, parmesan cheese, garlic, butter, parsley",
+      "instructions": "Cook fettuccine. Sauté garlic in butter, add cream and parmesan to make sauce. Cook chicken and toss with pasta and sauce.",
+      "vegetarian": false
+    },
+    {
+      "id": "12",
+      "title": "Beef Tacos",
+      "ingredients": "Ground beef, taco seasoning, corn tortillas, lettuce, cheese, salsa, sour cream",
+      "instructions": "Cook beef with taco seasoning. Warm tortillas. Fill with beef, lettuce, cheese, salsa, and sour cream.",
+      "vegetarian": false
+    },
+    {
+      "id": "13",
+      "title": "Shrimp Scampi",
+      "ingredients": "Shrimp, garlic, butter, lemon, white wine, parsley, linguine",
+      "instructions": "Cook linguine. Sauté garlic in butter, add shrimp and cook until pink. Add lemon juice and white wine, then toss with pasta.",
+      "vegetarian": false
+    },
+    {
+      "id": "14",
+      "title": "BBQ Ribs",
+      "ingredients": "Pork ribs, BBQ sauce, garlic powder, onion powder, paprika, salt, pepper",
+      "instructions": "Season ribs with spices. Bake or grill until tender. Brush with BBQ sauce and cook until caramelized.",
+      "vegetarian": false
+    },
+    {
+      "id": "15",
+      "title": "Chicken Curry",
+      "ingredients": "Chicken breast, curry powder, coconut milk, tomatoes, onion, garlic, ginger, cilantro",
+      "instructions": "Sauté onion, garlic, and ginger. Add chicken and curry powder. Stir in tomatoes and coconut milk. Simmer until chicken is cooked.",
+      "vegetarian": false
+    },
+    {
+      "id": "16",
+      "title": "Beef Stroganoff",
+      "ingredients": "Beef strips, mushrooms, onion, garlic, sour cream, beef broth, egg noodles",
+      "instructions": "Cook beef and set aside. Sauté onion, garlic, and mushrooms. Add broth and sour cream, then return beef to pan. Serve over noodles.",
+      "vegetarian": false
+    },
+    {
+      "id": "17",
+      "title": "Chicken Parmesan",
+      "ingredients": "Chicken breast, bread crumbs, parmesan cheese, marinara sauce, mozzarella cheese, basil",
+      "instructions": "Bread chicken with crumbs and parmesan. Bake until golden. Top with marinara and mozzarella, then bake until cheese is melted.",
+      "vegetarian": false
+    },
+    {
+      "id": "18",
+      "title": "Lamb Kebabs",
+      "ingredients": "Lamb, bell peppers, onion, garlic, olive oil, lemon juice, rosemary",
+      "instructions": "Marinate lamb with garlic, olive oil, lemon juice, and rosemary. Skewer with vegetables and grill until cooked.",
+      "vegetarian": false
+    },
+    {
+      "id": "19",
+      "title": "Fish Tacos",
+      "ingredients": "White fish, corn tortillas, cabbage, lime, cilantro, avocado, sour cream",
+      "instructions": "Cook fish and flake. Warm tortillas. Fill with fish, cabbage, avocado, and cilantro. Top with lime juice and sour cream.",
+      "vegetarian": false
+    },
+    {
+      "id": "20",
+      "title": "Pork Chops",
+      "ingredients": "Pork chops, garlic, rosemary, olive oil, salt, pepper",
+      "instructions": "Season pork chops with garlic, rosemary, salt, and pepper. Sear in olive oil until cooked through.",
+      "vegetarian": false
+    },
+    {
+      "id": "21",
+      "title": "Chocolate Cake",
+      "ingredients": "Flour, sugar, cocoa powder, baking powder, baking soda, eggs, milk, vegetable oil, vanilla extract",
+      "instructions": "Mix dry ingredients. Add eggs, milk, oil, and vanilla. Bake at 350°F until a toothpick comes out clean.",
+      "vegetarian": false,
+      "category": "Dessert"
+    },
+    {
+      "id": "22",
+      "title": "Apple Pie",
+      "ingredients": "Apples, sugar, cinnamon, nutmeg, flour, butter, pie crust",
+      "instructions": "Mix sliced apples with sugar, cinnamon, and nutmeg. Place in pie crust, dot with butter, cover with top crust. Bake until golden.",
+      "vegetarian": false,
+      "category": "Dessert"
+    },
+    {
+      "id": "23",
+      "title": "Cheesecake",
+      "ingredients": "Cream cheese, sugar, eggs, vanilla extract, graham cracker crust",
+      "instructions": "Beat cream cheese with sugar and vanilla. Add eggs one at a time. Pour into crust and bake until set.",
+      "vegetarian": false,
+      "category": "Dessert"
+    },
+    {
+      "id": "24",
+      "title": "Brownies",
+      "ingredients": "Butter, sugar, cocoa powder, eggs, flour, vanilla extract, baking powder",
+      "instructions": "Melt butter and mix with sugar and cocoa. Add eggs and vanilla, then flour and baking powder. Bake until set.",
+      "vegetarian": false,
+      "category": "Dessert"
+    },
+    {
+      "id": "25",
+      "title": "Lemon Bars",
+      "ingredients": "Flour, sugar, butter, eggs, lemon juice, lemon zest, baking powder",
+      "instructions": "Make crust with flour, sugar, and butter. Bake, then top with lemon mixture and bake again until set.",
+      "vegetarian": false,
+      "category": "Dessert"
+    },
+    {
+      "id": "26",
+      "title": "Banana Bread",
+      "ingredients": "Bananas, flour, sugar, eggs, butter, baking soda, vanilla extract, salt",
+      "instructions": "Mash bananas and mix with melted butter, sugar, egg, and vanilla. Add flour, baking soda, and salt. Bake until a toothpick comes out clean.",
+      "vegetarian": false,
+      "category": "Dessert"
+    },
+    {
+      "id": "27",
+      "title": "Peach Cobbler",
+      "ingredients": "Peaches, sugar, flour, baking powder, milk, butter",
+      "instructions": "Mix peaches with sugar. Make batter with flour, baking powder, milk, and melted butter. Pour batter into dish, top with peaches, bake until golden.",
+      "vegetarian": false,
+      "category": "Dessert"
+    },
+    {
+      "id": "28",
+      "title": "Pecan Pie",
+      "ingredients": "Pecans, corn syrup, sugar, eggs, butter, vanilla extract, pie crust",
+      "instructions": "Mix pecans with corn syrup, sugar, eggs, butter, and vanilla. Pour into crust and bake until set.",
+      "vegetarian": false,
+      "category": "Dessert"
+    },
+    {
+      "id": "29",
+      "title": "Tiramisu",
+      "ingredients": "Mascarpone cheese, sugar, eggs, espresso, ladyfingers, cocoa powder",
+      "instructions": "Mix mascarpone with sugar and eggs. Dip ladyfingers in espresso, layer with mascarpone mixture. Dust with cocoa and chill.",
+      "vegetarian": false,
+      "category": "Dessert"
+    },
+    {
+      "id": "30",
+      "title": "Carrot Cake",
+      "ingredients": "Carrots, flour, sugar, eggs, vegetable oil, baking soda, cinnamon, cream cheese",
+      "instructions": "Mix dry ingredients with grated carrots. Add eggs and oil. Bake until set. Frost with cream cheese frosting.",
+      "vegetarian": false,
+      "category": "Dessert"
+    },
+    {
+      "id": "8823",
+      "title": "Hard Boiled Egg",
+      "ingredients": "Egg\nWater",
+      "instructions": "1.Boil Hot water\n2. Once boiling, add egg\n3. Set timer to 7 minutes\n4. Remove and place in cold water for 2 minutes\n5. Remove and peel egg shells\n6. Enjoy!",
+      "vegetarian": false
     }
   ]
 }

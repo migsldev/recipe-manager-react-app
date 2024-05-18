@@ -20,6 +20,7 @@ function Search() {
                     onChange={(e) => setInput(e.target.value)} //event listener to detect keyboard inputs
                     type="text" 
                     value={input}
+                    placeholder="search"
                 />
             </div>
         </FormStyle>
@@ -28,7 +29,7 @@ function Search() {
 
 //styling form
 const FormStyle = styled.form`
-    margin: 0rem 20rem;
+    margin: 0rem 10rem;
 
     div{
         position: relative;

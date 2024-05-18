@@ -38,3 +38,4 @@ Recipe Manager is a web application designed to help users discover, save, and m
 ## Resources:
 - **Recipes API:** https://api.spoonacular.com
 - **React Icons:** https://react-icons.github.io/react-icons/
+- **Food Images:** https://unsplash.com/images/food
